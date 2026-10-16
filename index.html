@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050b18" />
+  <title>DreamHouse — My Dream House</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="DreamHouse home">
+      <span class="brand-mark">⌂</span><span>Dream<span>House</span></span>
+    </a>
+    <nav class="nav">
+      <a class="active" href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="contact-link" href="#about"><span>↗</span> Contact Us</a>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> SMART · MODERN · SUSTAINABLE</p>
+        <h1>MY DREAM<br><span>HOUSE</span></h1>
+        <p class="hero-subtitle">A high-tech home for a better tomorrow.</p>
+        <p class="hero-description">Modern design, smart technology, and comfort all in one place. This is not just a house — it’s a lifestyle.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#features">Explore More <span>↗</span></a>
+          <button class="button secondary" id="tourButton"><span class="play">▶</span> Explore 3D House</button>
+        </div>
+        <div class="scroll-hint"><span class="mouse"><i></i></span><span>SCROLL TO DISCOVER</span><span class="arrow-down">↓</span></div>
+      </div>
+      <div class="scene-wrap">
+        <div class="scene-glow"></div>
+        <div id="house-scene" aria-label="Interactive 3D model of a futuristic smart house"></div>
+        <div class="scene-label top-label"><span class="pulse"></span> LIVE 3D EXPERIENCE</div>
+        <div class="scene-label bottom-label"><span>01</span> FUTURE LIVING <i></i></div>
+        <div class="scene-controls"><span>DRAG TO ROTATE</span><span class="control-icon">⤾</span></div>
+        <div class="scene-caption">Concept visualization <span>·</span> 2086</div>
+      </div>
+      <div class="hero-index"><b>01</b><span></span><small>05</small></div>
+    </section>
+
+    <section class="feature-section section" id="features">
+      <div class="section-intro">
+        <p class="eyebrow">KEY FEATURES</p>
+        <h2>What Makes It<br><span>Special?</span></h2>
+        <p>A smart home with everything you need for a comfortable and happy life.</p>
+        <div class="mini-line"></div>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card" data-feature="smart">
+          <div class="feature-image image-smart"><span class="feature-symbol">⌂</span></div>
+          <div class="feature-content"><p class="feature-number">01 / INTELLIGENCE</p><h3>Smart Home</h3><p>Control everything with your voice or phone.</p><button class="text-link" data-open="smart">Discover feature <span>↗</span></button></div>
+        </article>
+        <article class="feature-card" data-feature="eco">
+          <div class="feature-image image-eco"><span class="feature-symbol">✳</span></div>
+          <div class="feature-content"><p class="feature-number">02 / SUSTAINABILITY</p><h3>Eco Friendly</h3><p>Solar panels and energy-saving systems.</p><button class="text-link" data-open="eco">Discover feature <span>↗</span></button></div>
+        </article>
+        <article class="feature-card" data-feature="security">
+          <div class="feature-image image-security"><span class="feature-symbol">⬡</span></div>
+          <div class="feature-content"><p class="feature-number">03 / PROTECTION</p><h3>High Security</h3><p>Smart cameras and advanced sensors.</p><button class="text-link" data-open="security">Discover feature <span>↗</span></button></div>
+        </article>
+        <article class="feature-card" data-feature="comfort">
+          <div class="feature-image image-comfort"><span class="feature-symbol">♡</span></div>
+          <div class="feature-content"><p class="feature-number">04 / WELLBEING</p><h3>Ultimate Comfort</h3><p>Modern rooms, clean air, and perfect temperature.</p><button class="text-link" data-open="comfort">Discover feature <span>↗</span></button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery-section section" id="gallery">
+      <div class="gallery-heading"><div><p class="eyebrow">INSIDE THE FUTURE</p><h2>Designed for <span>living.</span></h2></div><p>Every detail has a purpose.<br>Every moment feels effortless.</p></div>
+      <div class="gallery-grid">
+        <article class="gallery-tile living"><div class="tile-overlay"></div><div class="tile-copy"><span>01 — CONNECT</span><h3>The Smart Living Room</h3><p>One voice. A thousand possibilities.</p></div></article>
+        <article class="gallery-tile kitchen"><div class="tile-overlay"></div><div class="tile-copy"><span>02 — CREATE</span><h3>The Future Kitchen</h3><p>Everyday tasks, made effortless.</p></div></article>
+        <article class="gallery-tile bedroom"><div class="tile-overlay"></div><div class="tile-copy"><span>03 — RECHARGE</span><h3>Your Private Escape</h3><p>Peace, comfort, and perfect light.</p></div></article>
+      </div>
+    </section>
+
+    <section class="quote-section" id="about">
+      <div class="quote-orb"></div>
+      <p class="eyebrow">OUR VISION</p>
+      <h2>The future starts<br><span>at home.</span></h2>
+      <p class="quote-text">A home that thinks ahead, protects what matters, and brings people closer.</p>
+      <div class="presenters"><span>PROJECT PRESENTED BY</span><strong>Muhammad Amin <i>×</i> Shukurjon</strong></div>
+      <a href="#home" class="button primary">Back to the top <span>↑</span></a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#home"><span class="brand-mark">⌂</span><span>Dream<span>House</span></span></a>
+    <span class="footer-note">BUILD YOUR FUTURE HOME</span>
+    <span class="footer-copy">© 2086 DreamHouse Concept</span>
+  </footer>
+
+  <div class="modal" id="featureModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <p class="eyebrow" id="modalEyebrow">FEATURE 01</p>
+      <h2 id="modalTitle">Smart Home</h2>
+      <p id="modalText"></p>
+      <div class="modal-tag" id="modalTag">VOICE CONTROL · AI ASSISTANT</div>
+    </div>
+  </div>
+  <div class="toast" id="toast">Drag the 3D house to explore it.</div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
